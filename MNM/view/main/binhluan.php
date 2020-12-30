@@ -25,6 +25,7 @@
 		    	<div class="col-md-12">
 		        	<div class="form-group">
 					  <label for="comment">Comment:</label>
+					<textarea class="form-control" rows="3"  name="noidung"></textarea>
 					  
 					</div>
 		        </div>

@@ -11,12 +11,22 @@
     <div class="col-md-12 grid-margin stretch-card">
         <div class="card">
         	<br>
-			<h4 class="m-auto" > HÓA ĐƠN</h4>
-			<br>
-			<hr>
-			
-			<br>
-			<hr>
+			<h4 class="m-auto" > HÓA ĐƠN</h4><br><hr>
+			<div class="row">
+				<div class="col-md-3"></div>
+				<div class="col-md-3"><h5 style="font-family: Alata;">Mã Hóa Đơn </h5></div>
+				<div class="col-md-6"><h5 style="font-family: Alata;">: &#160;<?php echo $mahd ?></h5></div>
+				<div class="col-md-3"></div>
+				<div class="col-md-3"><h5 style="font-family: Alata;">Tên Người Nhận </h5></div>
+				<div class="col-md-6"><h5 style="font-family: Alata;">: &#160;<?php echo $row2['TenNN']; ?></h5></div>
+				<div class="col-md-3"></div>
+				<div class="col-md-3"><h5 style="font-family: Alata;">Địa Chỉ Người Nhận </h5></div>
+				<div class="col-md-6"><h5 style="font-family: Alata;">: &#160;<?php echo $row2['DiaChiNN'] ?></h5></div>
+				<div class="col-md-3"></div>
+				<div class="col-md-3"><h5 style="font-family: Alata;">SĐT Người Nhận </h5></div>
+				<div class="col-md-6"><h5 style="font-family: Alata;">: &#160;<?php echo $row2['SDTNN'] ?></h5></div>
+			</div>
+			<br><hr>
 			
 			<table class="table table-hover m-auto text-center" style="font-size: 13px;">
 				<thead class="badge-info">

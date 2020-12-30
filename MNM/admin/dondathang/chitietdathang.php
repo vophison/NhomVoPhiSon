@@ -14,7 +14,6 @@
 			<h4 class="m-auto" > HÓA ĐƠN</h4>
 			<br>
 			<hr>
-			
 			<br>
 			<hr>
 			

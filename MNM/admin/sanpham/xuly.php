@@ -9,10 +9,10 @@ if (isset($_POST['xlthem'])) {
 	$dongia = $_POST['dongia'];
 	$anhnen = $_FILES['anhnen']['name'];
 	
-	// if ($_FILES['anhnen']['type'] != "image/jpeg" || $_FILES['anhnen']['type'] != "image/png") {
-	// 	header('location:../index.php?action=sanpham&view=themsp&thongbao=loi');
-	// 	exit;
-	// }
+	if ($_FILES['anhnen']['type'] != "image/jpeg" || $_FILES['anhnen']['type'] != "image/png") {
+		header('location:../index.php?action=sanpham&view=themsp&thongbao=loi');
+		exit;
+	}
 	$AnhSP_tmp = $_FILES['anhnen']['tmp_name'];
 	move_uploaded_file($AnhSP_tmp, '../../webroot/img/sanpham/' . $anhnen);
 	$size = $_POST['size'];

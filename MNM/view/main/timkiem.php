@@ -19,8 +19,8 @@
 			$tukhoa=addslashes($_POST['search']);
             // lấy sản phẩm cần tìm
             $ds_spnb="SELECT * FROM `sanpham` WHERE `TenSP`  LIKE N'%".$tukhoa."%' ".$sx1;
-			// $query_dssp=mysqli_query($conn,$ds_spnb);
-		    // $sosp=mysqli_num_rows($query_dssp);
+			$query_dssp=mysqli_query($conn,$ds_spnb);
+		    $sosp=mysqli_num_rows($query_dssp);
 
 ?>
 <div class="container-fluid ">

@@ -1,0 +1,3 @@
+if($_FILES['anhnen']['type']!="image/jpeg" || $_FILES['anhnen']['type']!="image/png"){
+				header('location:../index.php?action=sanpham&view=themsp&thongbao=loi');exit;
+			}

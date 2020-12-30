@@ -31,7 +31,7 @@
        <input hidden name="masp" value="<?php echo $kq['MaSP']; ?>">
 	<div class="row ">
 		<div class="col-md-6  badge-light">
-			<img class="img-ctsp" src="./webroot/img/sanpham/.<?php echo $kq['AnhNen'];?>">
+			<img class="img-ctsp" src="./webroot/img/sanpham/<?php echo $kq['AnhNen'];?>">
 		</div>
 		<div class="col-md-6 ">
 			<h3 class="ft1"><?php echo mb_strtoupper($kq['TenSP']); ?></h3>

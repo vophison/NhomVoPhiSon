@@ -18,7 +18,7 @@
      <div class="form-group"> 
       <div class="col-md-12"> 
        <div class="input-group"> <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span> 
-        <input name="tenkh" placeholder=" Họ và Tên" class="form-control" type="password" required autofocus> 
+        <input name="tenkh" placeholder=" Họ và Tên" class="form-control" type="text" required autofocus> 
        </div> 
       </div> 
      </div> 

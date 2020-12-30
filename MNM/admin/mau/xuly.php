@@ -5,7 +5,7 @@ include_once('../../config/database.php');
 	if(isset($_GET['themmau'])){
 		$mamau=$_GET['mamau'];
 		$sql="insert into mau(MaMau) values(N'$mamau')";
-		// $rs=mysqli_query($conn,$sql);
+		$rs=mysqli_query($conn,$sql);
 		if(isset($rs)){
 			header('location:../index.php?action=mau&view=themmau&thongbao=them');
 		}else{

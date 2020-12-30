@@ -27,11 +27,9 @@ include_once('../../config/database.php');
 		$dc=$_POST['dc'];
 		$q=$_POST['q'];
 		$mk=$_POST['mk'];
-		$sql="INSERT INTO `nhanvien`( `TenNV`, `Email`, `SDT`, `DiaChi`, `Quyen`,`MatKhau` ) VALUES ('$hoten','$email','$sdt','$dc','$q','$mk')";
-		$rs=mysqli_query($conn,$sql);
 
-		// $sql="INSERT INTO `nhanvien`( `TenNV`, `Email`, `SDT`, `DiaChi`, `Quyen`,`MatKhau` ) VALUES ('$ten','$email','$sdt','$dc','$q','$mk')";
-		// $rs=mysqli_query($conn,$sql);
+		$sql="INSERT INTO `nhanvien`( `TenNV`, `Email`, `SDT`, `DiaChi`, `Quyen`,`MatKhau` ) VALUES ('$ten','$email','$sdt','$dc','$q','$mk')";
+		$rs=mysqli_query($conn,$sql);
 
 		if(isset($rs)){
 			header('location:../index.php?action=nhanvien&thongbao=them');

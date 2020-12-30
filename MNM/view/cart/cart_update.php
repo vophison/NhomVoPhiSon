@@ -165,27 +165,27 @@ if(isset($_GET['tru'])){
 		}
 		header('location:./../../index.php?view=cart');
 	}
-// xóa 1 sản phẩm trong giỏ hàng.
-// if(isset($_GET['xoa1'])){
-// 	$masp=$_GET['masp'];
-// 	$size=$_GET['size'];
-// 	$mau=$_GET['mau'];
-// 		foreach($_SESSION['cart_product'] as $item_cart){
-// 			if($item_cart['MaSP']==$masp && $item_cart['Size']==$size and ($item_cart['Mau']===$mau)){	
-// 			}
-// 			else{
-// 				$cart[]=array('MaSP'=>$item_cart['MaSP'],'TenSP'=>$item_cart['TenSP'],'SoLuong'=>$item_cart['SoLuong'],'Size'=>$item_cart['Size'],'Mau'=>$item_cart['Mau'],'DonGia'=>$item_cart['DonGia']);
+//xóa 1 sản phẩm trong giỏ hàng.
+if(isset($_GET['xoa1'])){
+	$masp=$_GET['masp'];
+	$size=$_GET['size'];
+	$mau=$_GET['mau'];
+		foreach($_SESSION['cart_product'] as $item_cart){
+			if($item_cart['MaSP']==$masp && $item_cart['Size']==$size and ($item_cart['Mau']===$mau)){	
+			}
+			else{
+				$cart[]=array('MaSP'=>$item_cart['MaSP'],'TenSP'=>$item_cart['TenSP'],'SoLuong'=>$item_cart['SoLuong'],'Size'=>$item_cart['Size'],'Mau'=>$item_cart['Mau'],'DonGia'=>$item_cart['DonGia']);
 				
-// 			}
-// 			$_SESSION['cart_product']=$cart;
-// 		header('location:./../../index.php?view=cart');
-// 		}
-// 	}
-// 	//xoa toan bo giỏ hàng
-// 	if(isset($_GET['xoaall'])){
-// 		unset($_SESSION['cart_product']);
-// 		header('location:./../../index.php?view=cart');
-// 	}
-// 	?>
+			}
+			$_SESSION['cart_product']=$cart;
+		header('location:./../../index.php?view=cart');
+		}
+	}
+	//xoa toan bo giỏ hàng
+	if(isset($_GET['xoaall'])){
+		unset($_SESSION['cart_product']);
+		header('location:./../../index.php?view=cart');
+	}
+	?>
 </body>
 </html>
